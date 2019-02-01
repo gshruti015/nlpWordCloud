@@ -4,7 +4,7 @@ library(wordcloud)
 library(RColorBrewer)
 
 #CONNECT TO TWITTER
-setup_twitter_oauth('','','','')
+setup_twitter_oauth('','','','') #use personal Twitter Credentials here
 subject_tweets<-searchTwitter('Budget2019',n=1000,lang='en')
 
 #get text data from the tweets
