@@ -20,4 +20,4 @@ term.matrix<-as.matrix(term.matrix)
 #word counts
 word.freq<-sort(rowSums(term.matrix),decreasing = TRUE)
 dm<-data.frame(word=names(word.freq),freq=word.freq)
-wordcloud(dm$word,dm$freq,random.order = FALSE,colors=brewer.pal(8,'Dark2'), size=0.9)
+wordcloud(dm$word,dm$freq,random.order = FALSE,colors=brewer.pal(8,'Dark2'), size=0.9, max.words = 100)
