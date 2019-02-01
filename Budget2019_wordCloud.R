@@ -4,7 +4,8 @@ library(wordcloud)
 library(RColorBrewer)
 
 #CONNECT TO TWITTER
-setup_twitter_oauth('MbTpLWjPMkqxvLn1ckeY9oant','7vPHNOy625GlFIhD6qHBdxGtY4i4nl5Y80QBDvdBvPYPMSwnsF','2904866593-odP7vx2tbvqppw0hZmWTlMjRUOoZAwWjAbELsR3','EQ1m1C0Mhy3lfQxeG0Ce9AVP3uvpW61foPpGYR5CtztMX')
+#Put your own credentials under setup_twitter_oauth
+setup_twitter_oauth('','','','')
 subject_tweets<-searchTwitter('Budget2019',n=1000,lang='en')
 
 #get text data from the tweets
